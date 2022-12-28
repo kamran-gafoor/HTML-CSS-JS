@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>
+			Sign up form
+		</title>
+		<script src ="../js/signup.js"></script>
+	</head>
+	<body>
+		<img src="../images/eficens.jpg" alt="Eficens logo" width="200" height ="100">
+		<a href="../index.html">Home</a><br><br>
+		<a href="login.html">Login</a><br><br>
+		<div id="successMessage"</div><br>
+		<div id="errors"</div><br>
+	
+		<form id="signUpForm>
+			<label for="fname">First name</label><br>
+			<input type="text" id="fname" name="fname"><br>
+			
+			<label for="lname">Last name</label><br>
+			<input type="text" id="lname" name="lname"><br>
+			
+			<label for="dob">Date of Birth</label><br>
+			<input type="date" id="dob" name="dob"><br>
+			
+			<label for="email">Email ID</label><br>
+			<input type="text" id="email" name="email"><br>
+			
+			<label for="phone">Phone number</label><br>
+			<input type="text" id="phone" name="phone"><br>
+			
+			<h3>Gender?</h3>
+			<input type="radio" id="Female" name="gender" value="Female">
+			<label for="female">Female</label><br>
+			<input type="radio" id="Male" name="gender" value="Male">
+			<label for="male">Male</label><br>
+			
+			<h3>Shopping</h3>
+			<input type="checkbox" id="cloths" name="cloths" value="cloths">
+			<label for="cloths">Cloths</label><br>
+			<input type="checkbox" id="electronics" name="electronics" value="electronics">
+			<label for="electronics">Electronics</label><br>
+			<input type="checkbox" id="toys" name="toys" value="toys">
+			<label for="toys">Toys</label><br>
+			<input type="checkbox" id="books" name="books" value="books">
+			<label for="books">Books</label><br><br>
+			
+			<label for="country">Select Country</label><br>
+			<select name="country" id="country">
+				<option value="">Country?</option>
+				<option value="USA">USA</option>
+				<option value="INDIA">INDIA</option>
+				<option value="CANADA">CANADA</option>
+				<option value="UK">UK</option>
+				<option value="GERMANY">GERMANY</option>
+			</select><br><br>
+			
+			<label for="password">Password</label><br>
+			<input type="password" id="password" name="password"><br>
+			
+			<label for="confirmpassword">Confirm Password</label><br>
+			<input type="password" id="confirmpassword" name="confirmpassword"><br>
+			
+			<label for="shipping">Shipping Address</label><br>
+			<textarea id="shipping" rows="5" cols="30" name="shipping"></textarea><br><br><br>
+			
+			<button type="button" onclick="validateForm();">Sign up</button>
+			<input type="button" onclick="confirmClearFields();" value="clear">
+		</form>
+		<div id = "loginForm" style="display:none;">
+			<iframe src ="login.html"></iframe>
+		</div>
+	</body>
+</html>
+
+			
+			
+			
+				
+			
+			
+			
+			
+			
+			

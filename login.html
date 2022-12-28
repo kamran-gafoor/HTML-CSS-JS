@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			Customer Login Form
+		</title>
+		<script src="../js/login.js"></script>
+		<link rel ="stylesheet" href="../css/styles.css">
+	</head>
+	<body>
+		<table align="center">
+			<tr>
+				<td colspan="2">
+					<img src="../images/kg.jpg" alt="Eficens Logo" width="200" height="100"><br><br>
+				</td>
+			</tr>
+				<td align="center">
+					<a href="../index.html">Home</a>
+				</td>
+			</tr>
+		</table>
+		
+		<div align="center" id="errors"></div><br>
+		<div align="center" id="successMessage"></div><br>
+		
+		<form onsubmit="return validateLoginForm();" method="POST" action="product.html">
+			<table align="center">
+				<tr>		
+					<td><label for="email">Email Id:</label></td>
+					<td><input type="text" id="email" name="email"></td>
+				</tr>
+				<tr>
+					<td><label for="password">Password:</label></td>
+					<td><input type="password" id="password" name="password"></td>
+				</tr>
+			</table><br><br>
+			<div align="center">
+				<button type="btnGreen" onclick="validateForm();">Sign Up</button>
+				<button type="btnGreen" onclick="clearAllTheFields();"> Clear All Fields</button>
+			</div>
+		</form>
+	</body>
+</html>
